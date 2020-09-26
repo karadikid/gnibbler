@@ -12,6 +12,6 @@ export default {
     cryptoTimeSeries: (symbol) =>
     instance({
         'method':'GET',
-        'url':symbol
+        'url':`${symbol}/profile`
     })
 }
