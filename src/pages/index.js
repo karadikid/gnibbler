@@ -59,8 +59,8 @@ const IndexPage = () => {
                 </fieldset>
             </form>
             <p>{message}</p>
-            <h3>Symbol: {responseData ? responseData.symbol : ''}</h3>
-            <p>Daily Time Series with Splits and Dividend Events</p>
+            <h3>Symbol: {ResponseData}</h3>
+            <p>Crypto</p>
             <small>Last Refresh: {responseData ? responseData.refreshed : ''}</small>
         </div>
     )
