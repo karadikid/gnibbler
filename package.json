@@ -1,0 +1,28 @@
+{
+  "name": "gnibbler",
+  "version": "1.0.0",
+  "description": "Cryptocurrency Data Application from Messari",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karadikid/gnibbler.git"
+  },
+  "keywords": [
+    "cryptocurrency",
+    "gnibbler",
+    "api",
+    "axios",
+    "react",
+    "fetch",
+    "defi"
+  ],
+  "author": "karadikid",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/karadikid/gnibbler/issues"
+  },
+  "homepage": "https://github.com/karadikid/gnibbler#readme"
+}
