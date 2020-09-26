@@ -13,16 +13,16 @@ const IndexPage = () => {
 
         setMessage('Loading...')
 
-        // api.stockTimeSeries(ticker)
-        // .then((response)=>{
-        //    setResponseData(response.data)
-        //    setMessage('')
-        //    console.log(response)
-        // })
-        // .catch((error) => {
-        //    setMessage('Error')
-        //    console.log(error)
-        // })
+        api.cryptoTimeSeries(symbol)
+        .then((response)=>{
+           setResponseData(response.data)
+           setMessage('')
+           console.log(response)
+        })
+        .catch((error) => {
+           setMessage('Error')
+           console.log(error)
+        })
     }
 
 

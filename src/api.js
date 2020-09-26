@@ -9,15 +9,9 @@ const instance = axios.create({
 });
 
 export default {
-    stockTimeSeries: (symbol) =>
+    cryptoTimeSeries: (symbol) =>
     instance({
         'method':'GET',
-        'url':'/query',
-        'params': {
-            'outputsize':'compact',
-            'datatype':'json',
-            'function':'TIME_SERIES_DAILY_ADJUSTED',
-            'symbol': symbol.toUpperCase()
-        },
+        'url':symbol
     })
 }
