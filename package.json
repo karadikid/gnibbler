@@ -24,5 +24,12 @@
   "bugs": {
     "url": "https://github.com/karadikid/gnibbler/issues"
   },
-  "homepage": "https://github.com/karadikid/gnibbler#readme"
+  "homepage": "https://github.com/karadikid/gnibbler#readme",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "gatsby": "^2.24.65",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "recharts": "^1.8.5"
+  }
 }
