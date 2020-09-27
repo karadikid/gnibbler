@@ -1,4 +1,4 @@
-# gnibbler - Crypto Finance Fullstack - Don't take a bite, start with a Nibble
+# gnibbler - Crypto Finance Fullstack - Don't take a byte, start with a Nibble
 
 # Introduction
 This application seeks to pull data from Messari.io in order to present a website that collects, aggregates, and collates blockchain entity data.
