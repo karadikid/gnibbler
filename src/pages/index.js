@@ -15,7 +15,7 @@ const IndexPage = () => {
 
         api.cryptoTimeSeries(symbol)
         .then((response)=>{
-           setResponseData(response.data)
+           setResponseData(response.data.data.profile)
            setMessage('')
            console.log(response)
         })
@@ -59,9 +59,9 @@ const IndexPage = () => {
                 </fieldset>
             </form>
             <p>{message}</p>
-            <h3>Symbol: {ResponseData}</h3>
+            <h3>Symbol: </h3>
             <p>Crypto</p>
-            <small>Last Refresh: {responseData ? responseData.refreshed : ''}</small>
+            <small>Last Refresh: {responseData ? responseData.refresh : ''}</small>
         </div>
     )
 }
