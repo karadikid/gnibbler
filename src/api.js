@@ -19,6 +19,9 @@ export default {
     instance({
         'method':'GET',
         baseURL:'https://data.messari.io/api/v2/assets?with-profiles',
-        'url':''
+        'url':'',
+        'params': {
+            'limit':'500'
+        },
     })
 }
