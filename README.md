@@ -59,5 +59,4 @@ Once evaluated this data will be used to create a smart contract infrastructure 
 - Hasura.io
 - Docker
 
-[Markdown Cheatsheet]
-(https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists)
+[Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
