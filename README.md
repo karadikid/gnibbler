@@ -58,3 +58,6 @@ Once evaluated this data will be used to create a smart contract infrastructure 
 - Postgres
 - Hasura.io
 - Docker
+
+[Markdown Cheatsheet]
+(https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists)
