@@ -9,9 +9,14 @@ const instance = axios.create({
 });
 
 export default {
-    cryptoTimeSeries: (symbol) =>
+    cryptoSymbolGet: (symbol) =>
     instance({
         'method':'GET',
         'url':`${symbol}/profile`
+    }),
+    cryptoProfilesGet: () =>
+    instance({
+        'method':'GET',
+        'url':'?with-profiles'
     })
 }

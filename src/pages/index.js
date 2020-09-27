@@ -4,6 +4,7 @@ import api from '../api'
 const IndexPage = () => {
     // Create state variables
     let [responseData, setResponseData] = React.useState('')
+    let [profileData, setProfileData] = React.useState('')
     let [symbol, setSymbol] = React.useState('')
     let [message, setMessage] = React.useState('')
 
@@ -13,7 +14,7 @@ const IndexPage = () => {
 
         setMessage('Loading...')
 
-        api.cryptoTimeSeries(symbol)
+        api.cryptoSymbolGet(symbol)
         .then((response)=>{
            setResponseData(response.data.data.profile)
            setMessage('')
@@ -22,7 +23,16 @@ const IndexPage = () => {
         .catch((error) => {
            setMessage('Error')
            console.log(error)
+        }),
+        api.cryptoProfilesGet()
+        .then((response)=>{
+            setProfileData(response.data.data)
+            console.log(response)
         })
+        .catch((error) => {
+            setMessage('Error')
+            console.log(error)
+         })
     }
 
 
