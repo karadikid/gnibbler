@@ -17,6 +17,7 @@ export default {
     cryptoProfilesGet: () =>
     instance({
         'method':'GET',
-        'url':'?with-profiles'
+        'baseURL': 'https://data.messari.io/api/v2/assets/?with-profiles',
+        'url':''
     })
 }

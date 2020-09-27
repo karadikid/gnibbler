@@ -23,7 +23,7 @@ const IndexPage = () => {
         .catch((error) => {
            setMessage('Error')
            console.log(error)
-        }),
+        })
         api.cryptoProfilesGet()
         .then((response)=>{
             setProfileData(response.data.data)
