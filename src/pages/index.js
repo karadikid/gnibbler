@@ -6,6 +6,7 @@ const IndexPage = () => {
     let [responseData, setResponseData] = React.useState('')
     let [profileData, setProfileData] = React.useState('')
     let [symbol, setSymbol] = React.useState('')
+    let [quantity, setQuantity] = React.useState('')
     let [message, setMessage] = React.useState('')
 
     // fetches stock data based on parameters
@@ -24,7 +25,7 @@ const IndexPage = () => {
            setMessage('Error')
            console.log(error)
         })
-        api.cryptoProfilesGet()
+        api.cryptoProfilesGet(quantity)
         .then((response)=>{
             setProfileData(response.data.data)
             console.log(response)
@@ -65,6 +66,15 @@ const IndexPage = () => {
                             onChange={(e) => setSymbol(e.target.value)}
                         />
                     </label>
+                    <label htmlFor="quantity">Enter number of profiles
+                        <input
+                            name="quantity"
+                            id="quantity"
+                            type='number'
+                            placeholder='500'
+                            value={quantity}
+                            onChange={(e) => setQuantity(e.target.value)}></input>
+                    </label>
                     <button type='submit'>Submit</button>
                 </fieldset>
             </form>
@@ -72,6 +82,7 @@ const IndexPage = () => {
             <h3>Symbol: </h3>
             <p>Crypto</p>
             <small>Last Refresh: {responseData ? responseData.refresh : ''}</small>
+            
         </div>
     )
 }

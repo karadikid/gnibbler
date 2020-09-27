@@ -15,13 +15,13 @@ export default {
         'method':'GET',
         'url':`${symbol}/profile`
     }),
-    cryptoProfilesGet: () =>
+    cryptoProfilesGet: (quantity) =>
     instance({
         'method':'GET',
         baseURL:'https://data.messari.io/api/v2/assets?with-profiles',
         'url':'',
         'params': {
-            'limit':'500'
+            'limit': `${quantity}`
         },
     })
 }
